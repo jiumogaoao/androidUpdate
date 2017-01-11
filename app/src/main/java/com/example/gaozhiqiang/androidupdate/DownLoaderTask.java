@@ -104,7 +104,7 @@ public class DownLoaderTask extends AsyncTask<Void, Integer, Long> {
         }
         if(isCancelled())
             return;
-        ((MainActivity)mContext).showUnzipDialog();
+        ((MainActivity)mContext).doZipExtractorWork();
     }
 
     private long download(){
